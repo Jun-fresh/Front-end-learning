@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>表单基础</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	</head>
+	<body>
+		<form action="action.php" method="post" target="_blank">
+			<h1 align="center">注册表单信息</h1>
+			<hr color="#336699"/>
+			<form>
+				<table width="800px" bgcolor="#f2f2f2" align="center" border="1">
+					<tr>
+						<td align="right">姓名：</td>
+						<td align="left"><input type="text" name="username" size="25" maxlength="6" placeholder="请输入姓名"/></td>
+					</tr>
+					<tr>
+						<td align="right">邮箱：</td>
+						<td align="left"><input type="text" name="email" value="@qq.com"/></td>
+					</tr>
+					<tr>
+						<td align="right">密码：</td>
+						<td align="left"><input type="password" name="pad" size="25" maxlength="6" placeholder="请输入密码"/></td>
+					</tr>
+					<tr>
+						<td align="right">确认密码：</td>
+						<td align="left"><input type="password" name="pad_confirm" size="25" maxlength="6" placeholder="请再次输入密码"/></td>
+					</tr>
+					<tr>
+						<td align="right">上传照片:</td>
+						<td align="left"><input type="file" name="file"/></td>
+					</tr>
+					<tr>
+						<td align="right">性别：</td>
+						<td align="left">男<input type="radio" name="sex" value="man"/>
+						    女<input type="radio" name="sex" value="woman"/></td>
+					</tr>
+					<tr>
+						<td align="right">爱好：</td>
+						<td align="left">读书<input type="checkbox" name="dx" value="readbook"/>
+						    跳舞<input type="checkbox" name="dx" value="dance"/>
+						    唱歌<input type="checkbox" name="dx" value="sing"/></td>
+					</tr>
+					<tr>
+						<td align="right">城市：</td>
+						<td align="left">
+							<select name="city">
+								<option value="option">--请选择--</option>
+								<optgroup label="辽宁">
+									<option value="shenyang">沈阳</option>
+									<option value="dalian">大连</option>
+								</optgroup>
+								<optgroup label="湖北">
+									<option value="shenyang">武汉</option>
+									<option value="enshi">恩施</option>
+								</optgroup>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td align="right">简介</td>
+						<td align="left">
+							<textarea name="textarea" rows="5" cols="50" placeholder="请输入个人信息"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center"><input type="button" value="点击" name=""/>
+						    <input type="submit" value="提交" name=""/>
+					        <input type="reset" value="重置" name=""/>
+					        <input type="image" name="" src="‪C:\Users\jianjun.ding\Pictures\signup.jpg"/>
+					    </td>
+					</tr>
+					<tr>
+						<td align="left">
+							<input type="hidden" name="hidden" value="这个一个用户注册表单"/>
+						</td>
+					</tr>
+				</table>
+			</form>
+
+		</form>
+	</body>
+</html>

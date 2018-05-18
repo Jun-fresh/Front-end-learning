@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS选择器优先级</title>
+	<style type="text/css">
+	 div{color:red;}
+	 #idgreen{color:green;}
+	 .blue{color:blue;}
+	</style>
+</head>
+<body>
+	<p>单独使用</p>
+	<div>标签选择器</div>
+	<div id="idgreen">ID选择器"绿色"</div>
+	<div class="classblue">class选择器</div>
+	<div id="idgreen" class="classblue">CSS</div>
+	<!-- CSS选择器优先级：id选择器 > class选择器 > 标签选择器 -->
+</body>
+</html>

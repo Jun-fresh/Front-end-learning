@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>浮动副作用的解决</title>
+	<style type="text/css">
+		.per{
+			width: 500px;
+			height: auto;
+			border: 1px black solid;
+			float:left;
+			/*overflow: hidden;
+			zoom:1;*/
+
+		}
+		.test{
+			width: 100px;
+			height: 30px;
+			background: red;
+			border: 1px solid #fff;
+			float:left;
+		}
+		.bro{
+			width: 100px;
+			height: 300px;
+			background: pink;
+			border: 1px solid #fff;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="per">
+		<div class="test"></div>
+		<div class="test"></div>
+		<div class="test"></div>
+		<div class="test"></div>
+		<div class="test"></div>
+		<div class="test"></div>
+		<div class="test"></div>
+		<div class="test"></div>
+		<div class="test"></div>
+	</div>
+	<div class="bro"></div>
+</body>
+</html>
